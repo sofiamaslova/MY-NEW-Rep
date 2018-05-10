@@ -6,19 +6,69 @@
     <meta name="description" content="Наша первая HTML страница"  >
     <meta name="keywords" content="Ключевое слово 1, Ключевое слово 2"  >
     <title>Hello world!!!</title>
+<!--Scripts block begin-->
     <script type="text/javascript">
+       // Обьявляем переменную только в Java скрипт
         var j = 10;
     console.log(j);
 
     </script>
-    <script src="index.js"> </script>
+    <script src="index.js" type="text/javascript"> </script>
+    <!--scrip blog End-->
     <style>
     h1 {
         text-align: center;
-    }</style>
+    }
+    h1 {
+        background: aqua;
+    }
+        td {
+            border:3px darkblue double;
+        }
+        thead
+        { font-weight: bold;
+            text-align: end;
+            background: lightblue   ;
+
+        }
+    /* Это все для заголовка */
+
+        #td-1 {border: crimson 5px ridge} /*это для конкретной ячейки*/
+
+
+        .table.row {background: cadetblue; color: darkblue}
+        tr:nth-last-child(even) /* псевдокласс, работает при каком либо действии (нажатии, наведении мыши)*/
+    </style >
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <h1> Привет </h1>
+<table style="border: 1px solid cornflowerblue ;"> <!-- Создали таблицу, таблице сделали рамку 1 пиксель-->
+    <thead>
 
+    <tr> <!-- Строка-->
+        <td>1 class=s</td><!-- Ячейка (сделали 4 ячейки)-->
+        <td>Миша</td>
+        <td>Phone</td>
+        <td>Email</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr> <!-- Строка-->
+        <td>2</td><!-- Ячейка (сделали 4 ячейки)-->
+        <td>Маша</td>
+        <td>Phone</td>
+        <td>Email</td>
+    </tr>
+    <tr> <!-- Строка-->
+        <td>3</td><!-- Ячейка (сделали 4 ячейки)-->
+        <td>Саша</td>
+        <td>Phone</td>
+        <td>Email</td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+
+</table>
 </body>
 </html>
